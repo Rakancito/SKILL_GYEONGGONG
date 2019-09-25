@@ -10,3 +10,5 @@ Check your identation.
 NOTE for the guide:
 
 Please follow the guide, if you follow it it will work.
+
+Thanks CHMarvin for the path fix effect ^^.
