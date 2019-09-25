@@ -1,7 +1,7 @@
 # SKILL_GYEONGGONG
 New Skill for Archer Skills Step Patch Official 17.5
 
-Gyazo: https://gyazo.com/f5903605c24aa479014f1b09cbe619b4
+Gyazo: https://gyazo.com/9ef8be0deb0c0d5e07915e9125fbe6ac
 
 NOTE for Python: 
 
