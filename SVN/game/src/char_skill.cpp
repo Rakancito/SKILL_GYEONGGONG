@@ -17,33 +17,6 @@ bool TSkillUseInfo::HitOnce(DWORD dwVnum)
 
 //Search
 
-		if (DISTANCE_APPROX(m_x - pkChrVictim->GetX(), m_y - pkChrVictim->GetY()) > m_pkSk->iSplashRange)
-		{
-			if(test_server)
-				sys_log(0, "XXX target too far %s", m_pkChr->GetName());
-			return;
-		}
-
-//in struct FuncSplashDamage and Replace with
-
-#ifdef ENABLE_NEW_GYEONGGONG_SKILL
-		if(m_pkSk->dwVnum == SKILL_GYEONGGONG)
-			if (DISTANCE_APPROX(m_x - pkChrVictim->GetX(), m_y - pkChrVictim->GetY()) > 200) // Splash Range
-				return;
-		else
-			if (DISTANCE_APPROX(m_x - pkChrVictim->GetX(), m_y - pkChrVictim->GetY()) > m_pkSk->iSplashRange)
-				return;
-#else
-		if (DISTANCE_APPROX(m_x - pkChrVictim->GetX(), m_y - pkChrVictim->GetY()) > m_pkSk->iSplashRange)
-		{
-			if(test_server)
-				sys_log(0, "XXX target too far %s", m_pkChr->GetName());
-			return;
-		}
-#endif
-
-//Search
-
 int CHARACTER::ComputeSkill(DWORD dwVnum, LPCHARACTER pkVictim, BYTE bSkillLevel)
 
 //Add Before
